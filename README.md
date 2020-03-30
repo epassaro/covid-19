@@ -11,7 +11,7 @@ Daily graphs of COVID-19 pandemic
 ---
 Automatic graph generation and site deploy also work with forks!
 
-- Fork the repo. Go to 'Actions' and activate. Go to 'Settings' and choose to deploy GitHub pages in `master` branch. 
-- New plots can be generated simply by adding a new key in the `countries` dictionary.
+- Fork the repo. Go to 'Actions' and activate. Go to 'Settings' and choose to deploy GitHub pages in `master` branch
+- New plots can be generated simply by adding a new key in the `countries` dictionary
 - Push your changes and voilà! 
 - Tip: comment `[skip-ci]` in the commit message to avoid building the site unnecesarily
