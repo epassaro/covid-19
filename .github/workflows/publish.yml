@@ -33,6 +33,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git add index.html time_series_covid19_confirmed_global.csv
         git commit -m "Commit changes (automatic)" -a
 
     - name: Push changes
