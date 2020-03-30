@@ -1,0 +1,40 @@
+# This is a basic workflow to help you get started with Actions
+
+name: publish
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Create environment
+      uses: goanpeca/setup-miniconda@v1.0.2
+      with:
+        auto-update-conda: True
+        activate-environment: covid19
+        environment-file: environment.yml
+        auto-activate-base: False
+        
+    - name: render notebook
+      run: jupyter nbconvert daily_graphs.ipynb --execute --no-input --output=index.html
+
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Commit changes (automatic)" -a
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
