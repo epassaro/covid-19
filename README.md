@@ -1,4 +1,7 @@
 # covid-19
+
+https://epassaro.github.io/covid-19 ![publish](https://github.com/epassaro/covid-19/workflows/publish/badge.svg)
+
 Daily graphs of COVID-19 pandemic
 
 - Automatically updated every day at 00:00 (Argentina Standard Time)
