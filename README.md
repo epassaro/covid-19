@@ -8,4 +8,4 @@ Daily graphs of COVID-19 pandemic
 - Data downloaded from [John Hopkins University repository](https://github.com/CSSEGISandData/COVID-19)
 - Code released under GNU GPLv3 License
 - Comment `[skip-ci]` in the commit message to avoid building the site
-- New plots can be generated easily simply by adding a new key in the `countries` dictionary.
+- New plots can be generated simply by adding a new key in the `countries` dictionary.
