@@ -1,4 +1,4 @@
-name: covid19
+name: covid-19
 
 channels:
   - conda-forge
