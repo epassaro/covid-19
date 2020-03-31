@@ -5,6 +5,7 @@ channels:
 
 dependencies:
   - python=3.6
+  - ruamel.yaml
   - pandas=1.0
   - bokeh=2.0
   - jupyter=1.0
