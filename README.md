@@ -16,4 +16,5 @@ Automatic graph generation and site deploy also work with forks!
 3. Go to 'Settings' and choose to deploy GitHub pages in `master` branch
 4. New plots can be generated simply by adding new entries in `plots.yml`. You don't need to run the notebook in your computer!.
 5. Push your changes and voilà!
-- Tip: comment `[skip-ci]` in the commit message to avoid building the site unnecesarily
+
+**Tip:** comment `[skip-ci]` in the commit message to avoid building the site unnecesarily
