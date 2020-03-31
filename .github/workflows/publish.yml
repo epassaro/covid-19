@@ -24,7 +24,7 @@ jobs:
       uses: goanpeca/setup-miniconda@v1.0.2
       with:
         auto-update-conda: True
-        activate-environment: covid19
+        activate-environment: covid-19
         environment-file: environment.yml
         auto-activate-base: False
         
