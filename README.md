@@ -20,7 +20,7 @@
 
 ## Development
 
-Requires a valid Anaconda or Miniconda installation.
+Requires a valid _Anaconda_ or _Miniconda_ installation.
 
 ```
 conda env create -f environment.yml
