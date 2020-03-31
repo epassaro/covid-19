@@ -6,7 +6,6 @@
 
 - Automatically updated every day at 22:00 (Argentina Standard Time).
 - Data downloaded from [John Hopkins University repository](https://github.com/CSSEGISandData/COVID-19).
-- Code released under GNU GPLv3 License.
 
 ## Automatic graph generation and site deploy
 
@@ -18,3 +17,17 @@
 6. Wait until the action `publish` is ready and go to `https://<your-username>.github.io/covid-19`.
 
 **Tip:** comment `[skip-ci]` in the commit message to avoid building the site unnecesarily.
+
+## Development
+
+Requires a valid Anaconda or Miniconda installation.
+
+```
+conda env create -f environment.yml
+conda activate covid-19
+jupyter notebook daily_update.ipynb
+```
+
+## License
+
+Code released under the [GNU GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.html).
