@@ -1,8 +1,6 @@
-# covid-19
+# Daily graphs of COVID-19 pandemic
 
 ![publish](https://github.com/epassaro/covid-19/workflows/publish/badge.svg)
-
-## Daily graphs of COVID-19 pandemic
 
 - Automatically updated every day at 22:00 (Argentina Standard Time).
 - Data downloaded from [John Hopkins University repository](https://github.com/CSSEGISandData/COVID-19).
