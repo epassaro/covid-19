@@ -8,4 +8,5 @@ dependencies:
   - ruamel.yaml
   - pandas=1.0
   - bokeh=2.0
+  - panel=0.9
   - jupyter=1.0
