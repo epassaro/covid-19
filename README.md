@@ -21,9 +21,9 @@
 Requires a valid _Anaconda_ or _Miniconda_ installation.
 
 ```
-conda env create -f environment.yml
-conda activate covid-19
-jupyter notebook daily_update.ipynb
+$ conda env create -f environment.yml
+$ conda activate covid-19
+$ jupyter notebook daily_update.ipynb
 ```
 
 ## License
