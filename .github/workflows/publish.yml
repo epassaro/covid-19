@@ -28,16 +28,16 @@ jobs:
         environment-file: environment.yml
         auto-activate-base: False
         
-    - name: render notebook
+    - name: Make index.html
       shell: bash -l {0}
       run: |
-        jupyter nbconvert daily_graphs.ipynb --execute --no-input --output=index.html
+        jupyter nbconvert daily_graphs.ipynb --execute
 
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add index.html time_series_covid19_confirmed_global.csv
+        git add index.html
         git commit -m "Commit changes (automatic)" -a
 
     - name: Push changes
