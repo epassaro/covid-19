@@ -28,4 +28,4 @@ $ jupyter notebook daily_update.ipynb
 
 ## License
 
-Code released under the [GNU GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.html).
+Code released under the [GNU GPLv3 License](https://raw.githubusercontent.com/epassaro/covid-19/master/LICENSE).
