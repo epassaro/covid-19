@@ -30,7 +30,9 @@ jobs:
         
     - name: render notebook
       shell: bash -l {0}
-      run: jupyter nbconvert daily_graphs.ipynb --execute --no-input --output=index.html
+      run: |
+        export JUPYTER_CONFIG_DIR=.
+        jupyter nbconvert daily_graphs.ipynb --execute --no-input --output=index.html
 
     - name: Commit files
       run: |
