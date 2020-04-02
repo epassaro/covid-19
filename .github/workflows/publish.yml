@@ -31,7 +31,8 @@ jobs:
     - name: Make index.html
       shell: bash -l {0}
       run: |
-        jupyter nbconvert daily_graphs.ipynb --execute
+        jupyter nbconvert daily_update.ipynb --execute --output=index.html
+        jupyter nbconvert daily_update.ipynb --clear-output
 
     - name: Commit files
       run: |
