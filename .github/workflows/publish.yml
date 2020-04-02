@@ -30,9 +30,7 @@ jobs:
         
     - name: Make index.html
       shell: bash -l {0}
-      run: |
-        jupyter nbconvert daily_update.ipynb --execute
-        jupyter nbconvert daily_update.ipynb --clear-output
+      run: jupyter nbconvert daily_update.ipynb --execute
 
     - name: Commit files
       run: |
