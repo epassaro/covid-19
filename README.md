@@ -2,7 +2,7 @@
 
 ![publish](https://github.com/epassaro/covid-19/workflows/publish/badge.svg)
 
-- Updates at 22:00 (Argentina Standard Time).
+- Updates at 01:00 UTC (22:00 Argentina Standard Time).
 - Data downloaded from [John Hopkins University repository](https://github.com/CSSEGISandData/COVID-19).
 
 ## Automatic graph generation and site deploy
