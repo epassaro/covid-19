@@ -10,3 +10,4 @@ dependencies:
   - bokeh=2.0
   - panel=0.9.3
   - jupyter=1.0
+  - nbconvert=5.6
