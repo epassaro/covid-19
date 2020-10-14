@@ -15,42 +15,54 @@ North America:
   - Mexico
   - US
   
-Europe: 
-  - Italy
-  - Spain
+Europe:
+  - Belgium
   - France
   - Germany
-  - Switzerland
+  - Italy
   - Netherlands
-  - Belgium
-  - United Kingdom
-  - Sweden
   - Russia
-  
-Asia and Oceania:
-  - China
-  - Korea, South
-  - Japan
-  - Singapore
-  - Thailand
-  - Indonesia
-  - Philippines
-  - India
-  - Pakistan
-  - Australia
-  - New Zealand
-  
-North Africa:
+  - Spain
+  - Sweden
+  - Switzerland
+  - United Kingdom
+
+Southern Africa:
+  - Angola
+  - Botswana
+  - Namibia
+  - South Africa
+  - Zimbabwe
+
+Northern Africa:
+  - Algeria
   - Egypt
   - Libya
-  - Algeria
-  - Tunisia
   - Morocco
-  
+  - Tunisia
+
 Middle East:
   - Iran
-  - Turkey
   - Israel
-  - West Bank and Gaza
-  - Saudi Arabia
   - Qatar
+  - Saudi Arabia
+  - Turkey
+  - West Bank and Gaza
+
+Asia:
+  - China
+  - Japan
+  - Korea, South
+  - India
+  - Indonesia
+  - Pakistan
+  - Philippines
+  - Singapore
+  - Thailand
+  - Vietnam
+
+Oceania:
+  - Australia
+  - Fiji
+  - Papua New Guinea
+  - New Zealand
