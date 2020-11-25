@@ -39,7 +39,7 @@ jobs:
 
     - name: Commit files
       run: |
-        git checkout gh-pages
+        git checkout gh-pages index.html
         git add index.html
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
