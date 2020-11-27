@@ -45,8 +45,8 @@ jobs:
         git commit -m "Commit changes (do not push)" -a
 
         git checkout gh-pages
-        git checkout master -- index.html
-        git add index.html
+        git checkout master -- index.html ar/index.html
+        git add index.html ar/index.html
         git commit -m "Commit changes (automatic)" -a
 
     - name: Push changes
