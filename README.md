@@ -4,7 +4,7 @@
 
 - Updates at 01:00 UTC (22:00 Argentina Standard Time).
 - Data downloaded from [John Hopkins University repository](https://github.com/CSSEGISandData/COVID-19).
-
+- Data from Argentina provided by [Sistemas Mapache](https://github.com/SistemasMapache/Covid19arData)
 ## Automatic graph generation and site deploy
 
 1. Fork the repo and clone it.
