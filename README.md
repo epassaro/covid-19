@@ -1,4 +1,4 @@
-# COVID-19 Daily Update
+# COVID-19 -- Daily Update
 
 ![publish](https://github.com/epassaro/covid-19/workflows/publish/badge.svg)
 
