@@ -10,9 +10,16 @@ South America:
   - Uruguay
   - Venezuela
   
-North America:
+Central & North America:
+  - Belize
   - Canada
+  - Costa Rica
+  - El Salvador
+  - Guatemala
+  - Honduras
   - Mexico
+  - Nicaragua
+  - Panama
   - US
   
 Europe:
@@ -23,41 +30,36 @@ Europe:
   - Netherlands
   - Russia
   - Spain
-  - Sweden
-  - Switzerland
+  - Turkey
   - United Kingdom
 
-Southern Africa:
-  - Angola
-  - Botswana
-  - Namibia
-  - South Africa
-  - Zimbabwe
-
-Northern Africa:
+Africa:
   - Algeria
   - Egypt
   - Libya
   - Morocco
   - Tunisia
+  - South Africa
 
 Middle East:
   - Iran
   - Israel
   - Qatar
   - Saudi Arabia
-  - Turkey
   - West Bank and Gaza
 
 Asia:
   - China
-  - Japan
   - India
-  - Indonesia
+  - Japan
+  - Korea, South
+  - Nepal
   - Pakistan
+
+Asian Southeast:
+  - Indonesia
   - Philippines
   - Singapore
-  - Korea, South
   - Thailand
   - Vietnam
 
