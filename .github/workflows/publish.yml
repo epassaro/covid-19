@@ -4,38 +4,47 @@ on:
   push:
     branches: [ master ]
 
-  pull_request:
-    branches: [ master ]
-
   schedule:
     - cron: "0 0 * * *"
 
-  workflow_dispatch:
+  workflow_dispatch: # manual trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
 
+    defaults:
+      run:
+        shell: bash -l {0}
+    
     steps:
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+        fetch-depth: 0 # otherwise you will fail to push refs to dest repo
 
-    - name: Create environment
+    - name: Cache conda
+      uses: actions/cache@v2
+      env:
+        CACHE_NUMBER: 0 # increase to reset cache if env file has not changed
+      with:
+        path: ~/conda_pkgs_dir
+        key:
+          ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('environment.lock') }}
+
+    - name: Setup environment
       uses: conda-incubator/setup-miniconda@v2
       with:
-        environment-file: environment.yml
-        activate-environment: covid-19
-        channels: conda-forge, defaults
-        mamba-version: "*"
+          miniforge-variant: Mambaforge
+          miniforge-version: latest
+          environment-file: environment.lock
+          activate-environment: covid-19
+          use-mamba: true
+          use-only-tar-bz2: true # required for cache to work
 
     - name: Make index.html
-      shell: bash -l {0}
       run: jupyter nbconvert daily_update.ipynb --execute
 
     - name: Make ar/index.html
-      shell: bash -l {0}
       run: cd ar/ && jupyter nbconvert daily_update.ipynb --execute
 
     - name: Commit files
