@@ -45,7 +45,7 @@ jobs:
       run: jupyter nbconvert daily_update.ipynb --execute
 
     - name: Make ar/index.html
-      run: cd ar/ && jupyter nbconvert daily_update.ipynb --execute
+      run: cd ar/ && jupyter nbconvert daily_update_ar.ipynb --execute
 
     - name: Commit files
       run: |
