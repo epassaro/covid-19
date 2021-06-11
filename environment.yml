@@ -7,7 +7,7 @@ dependencies:
   - python=3.6
   - ruamel.yaml
   - pandas=1.0
-  - bokeh=2.0
-  - panel=0.9.3
+  - bokeh=2.3
+  - panel=0.11
   - jupyter=1.0
   - nbconvert=5.6
