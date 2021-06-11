@@ -49,18 +49,13 @@ jobs:
 
     - name: Commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add index.html ar/index.html
-        git commit -m "Commit changes (do not push)" -a
+        mkdir -p public/ar
+        mv index.html public
+        mv ar/index.html public/ar
 
-        git checkout gh-pages
-        git checkout master -- index.html ar/index.html
-        git add index.html ar/index.html
-        git commit -m "Commit changes (automatic)" -a
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Deploy site
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
+        publish_dir: ./public
+        force-orphan: true
