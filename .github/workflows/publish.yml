@@ -47,7 +47,7 @@ jobs:
     - name: Make ar/index.html
       run: cd ar/ && jupyter nbconvert daily_update_ar.ipynb --execute
 
-    - name: Commit files
+    - name: Create site
       run: |
         mkdir -p public/ar
         mv index.html public
@@ -58,4 +58,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-        force-orphan: true
+        force_orphan: true
