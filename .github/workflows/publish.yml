@@ -47,11 +47,15 @@ jobs:
     - name: Make ar/index.html
       run: cd ar/ && jupyter nbconvert daily_update_ar.ipynb --execute
 
+    - name: Make ar/vacunas/index.html
+      run: cd ar/vacunas && jupyter nbconvert vacunas_ar.ipynb --execute
+
     - name: Create site
       run: |
-        mkdir -p public/ar
+        mkdir -p public/ar/vacunas
         mv index.html public
         mv ar/index.html public/ar
+        mv ar/vacunas/index.html public/ar/vacunas
 
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v3
