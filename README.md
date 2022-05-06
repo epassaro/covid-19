@@ -2,9 +2,11 @@
 
 ![publish](https://github.com/epassaro/covid-19/workflows/publish/badge.svg)
 
-- Updates at 01:00 UTC (22:00 Argentina Standard Time).
+> :warning: The site is no longer updated since 6/5/2022.
+
+- ~Updates at 01:00 UTC (22:00 Argentina Standard Time).~
 - Data downloaded from [John Hopkins University repository](https://github.com/CSSEGISandData/COVID-19).
-- Data from Argentina provided by [Sistemas Mapache](https://github.com/SistemasMapache/Covid19arData)
+- Data from Argentina provided by [Sistemas Mapache](https://github.com/SistemasMapache/Covid19arData). (Last updated: 9/11/2021).
 ## Automatic plots and site deploy
 
 1. Fork the repo and clone it.
